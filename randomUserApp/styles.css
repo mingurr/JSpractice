@@ -1,0 +1,30 @@
+:root {
+    --primary-color : #0C2D57;
+    --second-color: #FC6736;
+    --grey-color-1: #E3E1D9;
+    --grey-color-2: #C7C8CC;
+    --grey-color-3: #B4B4B8;
+    --white-color: #fff;
+    --black-color: #222;
+    --ff-primary: sans-serif;
+    --transition: all 0.3s linear;
+    --spacing: 0.25rem;
+    --radius: 0.5rem;
+    --max-width: 1170px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: var(--ff-primary);
+    font-size: 0.875rem;
+
+}
+
+img {
+   
+}
