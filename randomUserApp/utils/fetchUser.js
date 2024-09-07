@@ -6,7 +6,7 @@ const getUser = async () => {
     const response = await fetch(URL); //서버에서 데이터를 가져옴
     const data = await response.json(); //JSON 본문 콘텐츠를 추출
     console.log(data)
-    const person = data.result[0];
+    const person = data.results[0];
     const {phone, email} = person;
     const {large: image} = person.picture;
     const {password} = person.login;
