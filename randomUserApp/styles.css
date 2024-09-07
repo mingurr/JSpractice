@@ -7,9 +7,9 @@
     --white-color: #fff;
     --black-color: #222;
     --ff-primary: sans-serif;
-    --transition: all 0.3s linear;
+    --transition: all 0.2s linear;
     --spacing: 0.25rem;
-    --radius: 0.5rem;
+    --radius: 1.25rem;
     --max-width: 1170px;
 }
 
@@ -26,5 +26,91 @@ body {
 }
 
 img {
+   border-radius: 50%;
    
+}
+
+.container {
+    background-color: var(--grey-color-1);
+    width: 90vw;
+    max-width: 730px;
+    margin: auto;
+    margin-top: 200px;
+    text-align: center;
+    border-radius: var(--radius);
+    position: relative;
+    padding: 1.5rem;
+}
+
+.container::before {
+    content: "";
+    position: absolute;
+    background-color: var(--primary-color);
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 130px;
+    border-top-left-radius: var(--radius);
+    border-top-right-radius: var(--radius);
+
+}
+
+.container img {
+    width: 150px;
+    height: 150px;
+    position: relative;
+    margin-top: 25px;
+    padding: 10px;
+    background-color: var(--second-color);
+}
+
+.user-title {
+    font-size: 18px;
+    margin-top: 10px;
+}
+
+.user-value {
+    color: var(--second-color);
+    font-size: 28px;
+}
+
+.values-list {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+}
+
+.icon {
+    background-color: transparent;
+    border: transparent;
+    font-size: 20px;
+    margin-top: 20px;
+    color: var(--grey-color-3);
+    transition: var(--transition);
+
+}
+
+.icon:hover {
+    color: var(--second-color);
+}
+
+.active {
+    color: var(--second-color);
+    
+}
+
+.btn {
+    text-transform: uppercase;
+    background-color: var(--primary-color);
+    color: var(--second-color);
+    padding: 0.7rem 1rem;
+    margin-top: 25px;
+    border-radius: var(--radius);
+    border: transparent;
+    transition: var(--transition);
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: var(--second-color);
+    color: var(--primary-color);
 }
