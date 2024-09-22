@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script
+      src="https://kit.fontawesome.com/1a290abd05.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="styles.css" />
+    <script type="module" src="main.js"></script>
+    <script type="module" src="./pages/about.js"></script>
+  </head>
+  <body>
+    <!-- navbar -->
+    <nav class="navbar page">
+      <div class="nav-center">
+        <div>
+          <button class="toggle-nav">
+            <i class="fa-solid fa-bars"></i>
+          </button>
+          <ul class="nav-links">
+            <li>
+              <a href="index.html" class="nav-link">home</a>
+            </li>
+            <li>
+              <a href="products.html" class="nav-link">products</a>
+            </li>
+            <li>
+              <a href="about.html" class="nav-link">about</a>
+            </li>
+          </ul>
+        </div>
+        <!-- logo -->
+        <div class="nav-logo white">
+          <i>Foody</i>
+        </div>
+        <!-- cart icon -->
+        <div class="toggle-container">
+          <button class="toggle-cart">
+            <i class="fa-solid fa-cart-shopping"></i>
+          </button>
+          <span class="cart-item-count">1</span>
+        </div>
+      </div>
+    </nav>
+    <!-- hero -->
+    <section class="page-hero">
+      <div class="section-center">
+        <h3 class="page-hero-title">Home / About</h3>
+      </div>
+    </section>
+    <!-- side bar -->
+    <div class="sidebar-overlay">
+      <aside class="sidebar">
+        <!-- close -->
+        <button class="sidebar-close">
+          <i class="fa-solid fa-xmark"></i>
+        </button>
+        <!-- links -->
+        <ul class="sidebar-links">
+          <li>
+            <a href="index.html" class="sidebar-link">
+              <i class="fa-solid fa-house"></i>
+              home
+            </a>
+          </li>
+          <li>
+            <a href="products.html" class="sidebar-link">
+              <i class="fa-solid fa-couch"></i>
+              products
+            </a>
+          </li>
+          <li>
+            <a href="about.html" class="sidebar-link">
+              <i class="fa-solid fa-book"></i>
+              about
+            </a>
+          </li>
+        </ul>
+      </aside>
+    </div>
+    <!-- cart -->
+    <div class="cart-overlay">
+      <aside class="cart">
+        <button class="cart-close">
+          <i class="fa-solid fa-xmark"></i>
+        </button>
+        <header>
+          <h3 class="text-slanted">your cart</h3>
+        </header>
+        <!-- cart items -->
+        <div class="cart-items"></div>
+        <!-- footer -->
+        <footer>
+          <h3 class="cart-total text-slanted">total : $13</h3>
+          <button class="cart-checkout btn">checkout</button>
+        </footer>
+      </aside>
+    </div>
+
+    <!-- about -->
+    <section class="section section-center about-page">
+      <div class="title">
+        <h2><span>/</span> about page</h2>
+      </div>
+      <p class="about-text">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat vero
+        aliquam, quod, reiciendis consequuntur velit suscipit quam neque, fuga
+        eum voluptates? Eum voluptates a eveniet hic blanditiis exercitationem
+        maxime impedit. Lorem ipsum dolor sit amet consectetur adipisicing elit.
+        Doloribus, quis ad! Ex magnam dolor veritatis, eaque fugiat facere at
+        commodi, nulla incidunt blanditiis veniam? Sint, facilis doloribus.
+        Unde, a rem.
+      </p>
+    </section>
+  </body>
+</html>
